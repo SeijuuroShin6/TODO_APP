@@ -1,0 +1,124 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #FAF9F6;
+  color: #353935;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3em;
+  left: 6em;
+  gap: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.todo_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #353935;
+  color: #FAF9F6;
+  height: 200px;
+  width: 500px;
+  gap: 3em;
+  border-radius: 1em;
+}
+
+.todo_section p:first-child {
+  font-size: 2.3em;
+}
+
+.todo_section p:last-child {
+  font-size: 1.5em;
+}
+
+.todo_section div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #353935;
+  background-color: #FAF9F6;
+  height: 150px;
+  width: 150px;
+  border-radius: 5em;
+  font-size: 1.8em;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+
+input {
+  height: 3em;
+  width: 33em;
+  background-color: #353935;
+  color: #FAF9F6;
+  border: none;
+  border-radius: .7em;
+}
+
+input::placeholder {
+  color: #FAF9F6;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+  padding: 13px;
+}
+
+form button:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  background-color: #353935;
+  color: #FAF9F6;
+  border-radius: .5em;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+
+ol {
+  padding-top: 2em;
+  font-weight: bold;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
