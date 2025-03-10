@@ -121,4 +121,41 @@ ol {
   white-space: nowrap;
 }
 
+.todo_item, .edit-form input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E5E4E2;
+  color: #353935;
+  height: 3em;
+  padding: 13px;
+  border-radius: .7em;
+  margin-top: 1em;
+}
 
+.edit-form input {
+  outline: transparent;
+  width: calc(100% - 14px);
+  height: calc(100% - 12px);
+  border: transparent;
+}
+
+.todo_items_left,.todo_items_right {
+  display: flex;
+  align-items: center;
+}
+
+.todo_items_left {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+}
+
+.todo_items_right {
+  gap: 1em;
+}
+
+.todo_items_right button {
+  background-color: transparent;
+  border: none;
+}

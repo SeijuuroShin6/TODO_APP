@@ -13,7 +13,7 @@ export default function Form()
 
             <button>
                 <span className="visually-hidden">Submit</span>
-                <img src="/plus.svg" height="40" width="40"/>
+                <img src="/plus.svg" height="20" width="20"/>
             </button>
         </form>
     );
