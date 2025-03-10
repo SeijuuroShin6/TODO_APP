@@ -123,7 +123,8 @@ ol {
 
 .todo_item, .edit-form input {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   background-color: #E5E4E2;
   color: #353935;

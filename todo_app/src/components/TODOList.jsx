@@ -14,18 +14,24 @@ export default function TODOList({ todos, setTodos }) {
   
 
 function Item({ item, setTodos }) {
-    const handleComplete = () => {
-      setTodos((prevTodos) =>
-        prevTodos.map((todo) =>
-          todo.id === item.id ? { ...todo, is_completed: !todo.is_completed } : todo
-        )
-      );
-    };
+  const completeTodo = () => {
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
+        todo.id === item.id
+          ? { ...todo, is_completed: !todo.is_completed }
+          : todo
+      )
+    );
+  };
   
     return (
       <li id={item?.id} className="todo_item">
-        <button className="todo_items_left" onClick={handleComplete}>
-          <p>{item?.title}</p>
+        <button className="todo_items_left" onClick={completeTodo} >
+           <svg fill={item.is_completed ? "#22C55E" : "#0d0d0d"}>
+             <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998" />
+            </svg>
+          
+          <p style={item.is_completed ? { textDecoration: "line-through" } : {}}>{item?.title} </p>
         </button>
   
         <div className="todo_items_right">
